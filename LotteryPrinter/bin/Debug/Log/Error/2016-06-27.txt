@@ -1,0 +1,12 @@
+﻿2016/6/27 5:23:11	System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Double.Parse(String s)
+   在 Lottery.BLL.SuanJiangTxt.GetZhongJianTitck(List`1 lis, String chuanGuanShu, SuanJiangClass suanJiangClass) 位置 c:\Users\lenovo\Desktop\---\AAA\LotteryPrinter\LotteryPrinter\LotteryPrinter\LotteryBLL\SuanJiangTxt.cs:行号 167
+   在 Lottery.BLL.SuanJiangTxt.ChuLiValue(SuanJiangClass suanJiangClass) 位置 c:\Users\lenovo\Desktop\---\AAA\LotteryPrinter\LotteryPrinter\LotteryPrinter\LotteryBLL\SuanJiangTxt.cs:行号 153
+   在 Lottery.BLL.SuanJiangTxt.SelectDate(DateTime DateTimeTitck_S, DateTime DateTimeTitck_E) 位置 c:\Users\lenovo\Desktop\---\AAA\LotteryPrinter\LotteryPrinter\LotteryPrinter\LotteryBLL\SuanJiangTxt.cs:行号 93
+2016/6/27 5:35:58	System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Double.Parse(String s)
+   在 Lottery.BLL.SuanJiangTxt.GetZhongJianTitck(List`1 lis, String chuanGuanShu, SuanJiangClass suanJiangClass) 位置 c:\Users\lenovo\Desktop\---\AAA\LotteryPrinter\LotteryPrinter\LotteryPrinter\LotteryBLL\SuanJiangTxt.cs:行号 179
+   在 Lottery.BLL.SuanJiangTxt.ChuLiValue(SuanJiangClass suanJiangClass) 位置 c:\Users\lenovo\Desktop\---\AAA\LotteryPrinter\LotteryPrinter\LotteryPrinter\LotteryBLL\SuanJiangTxt.cs:行号 165
+   在 Lottery.BLL.SuanJiangTxt.SelectDate(DateTime DateTimeTitck_S, DateTime DateTimeTitck_E) 位置 c:\Users\lenovo\Desktop\---\AAA\LotteryPrinter\LotteryPrinter\LotteryPrinter\LotteryBLL\SuanJiangTxt.cs:行号 105

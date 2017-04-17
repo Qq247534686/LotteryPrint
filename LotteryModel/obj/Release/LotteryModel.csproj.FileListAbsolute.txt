@@ -1,0 +1,17 @@
+C:\Users\lenovo\Desktop\LotteryPrinter\LotteryModel\bin\Release\Lottery.Model.dll
+C:\Users\lenovo\Desktop\LotteryPrinter\LotteryModel\bin\Release\Lottery.Model.pdb
+C:\Users\lenovo\Desktop\LotteryPrinter\LotteryModel\obj\Release\Lottery.Model.dll
+C:\Users\lenovo\Desktop\LotteryPrinter\LotteryModel\obj\Release\Lottery.Model.pdb
+C:\Users\lenovo\Desktop\LotteryPrinter\LotteryPrinter\LotteryModel\bin\Release\Lottery.Model.dll
+C:\Users\lenovo\Desktop\LotteryPrinter\LotteryPrinter\LotteryModel\bin\Release\Lottery.Model.pdb
+C:\Users\lenovo\Desktop\LotteryPrinter\LotteryPrinter\LotteryModel\obj\Release\Lottery.Model.dll
+C:\Users\lenovo\Desktop\LotteryPrinter\LotteryPrinter\LotteryModel\obj\Release\Lottery.Model.pdb
+C:\Users\lenovo\Desktop\LotteryPrinter\LotteryPrinter\LotteryModel\obj\Release\LotteryModel.csprojResolveAssemblyReference.cache
+C:\Users\lenovo\Desktop\新建文件夹\LotteryPrinter\LotteryPrinter\LotteryModel\bin\Release\Lottery.Model.dll
+C:\Users\lenovo\Desktop\新建文件夹\LotteryPrinter\LotteryPrinter\LotteryModel\bin\Release\Lottery.Model.pdb
+C:\Users\lenovo\Desktop\新建文件夹\LotteryPrinter\LotteryPrinter\LotteryModel\obj\Release\Lottery.Model.dll
+C:\Users\lenovo\Desktop\新建文件夹\LotteryPrinter\LotteryPrinter\LotteryModel\obj\Release\Lottery.Model.pdb
+C:\Users\lenovo\Desktop\---\AAA\LotteryPrinter\LotteryPrinter\LotteryPrinter\LotteryModel\bin\Release\Lottery.Model.dll
+C:\Users\lenovo\Desktop\---\AAA\LotteryPrinter\LotteryPrinter\LotteryPrinter\LotteryModel\bin\Release\Lottery.Model.pdb
+C:\Users\lenovo\Desktop\---\AAA\LotteryPrinter\LotteryPrinter\LotteryPrinter\LotteryModel\obj\Release\Lottery.Model.dll
+C:\Users\lenovo\Desktop\---\AAA\LotteryPrinter\LotteryPrinter\LotteryPrinter\LotteryModel\obj\Release\Lottery.Model.pdb

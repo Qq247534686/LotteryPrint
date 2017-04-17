@@ -1,0 +1,6 @@
+﻿2016-06-28	160625174458330881投注赔率匹配失败:System.ArgumentException: 已添加了具有相同键的项。
+   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   在 Lottery.BLL.SuanJiangTxt.SplitTitckValue(Titck_GeShi titck_GeShi, String redy) 位置 c:\Users\lenovo\Desktop\---\AAA\LotteryPrinter\LotteryPrinter\LotteryPrinter\LotteryBLL\SuanJiangTxt.cs:行号 243
+   在 Lottery.BLL.SuanJiangTxt.ChuLiValue(SuanJiangClass suanJiangClass) 位置 c:\Users\lenovo\Desktop\---\AAA\LotteryPrinter\LotteryPrinter\LotteryPrinter\LotteryBLL\SuanJiangTxt.cs:行号 143

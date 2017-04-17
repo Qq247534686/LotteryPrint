@@ -1,0 +1,5 @@
+C:\Users\lenovo\Desktop\---\AAA\LotteryPrinter\LotteryPrinter\LotteryPrinter\Test\bin\Release\Test.exe.config
+C:\Users\lenovo\Desktop\---\AAA\LotteryPrinter\LotteryPrinter\LotteryPrinter\Test\bin\Release\Test.exe
+C:\Users\lenovo\Desktop\---\AAA\LotteryPrinter\LotteryPrinter\LotteryPrinter\Test\bin\Release\Test.pdb
+C:\Users\lenovo\Desktop\---\AAA\LotteryPrinter\LotteryPrinter\LotteryPrinter\Test\obj\Release\Test.exe
+C:\Users\lenovo\Desktop\---\AAA\LotteryPrinter\LotteryPrinter\LotteryPrinter\Test\obj\Release\Test.pdb

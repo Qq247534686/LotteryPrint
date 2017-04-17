@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetDataMethod">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InputID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDataMethodResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDataMethodResult" type="tns:LotterData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="LotterData">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MyDateTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="AgentID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Money" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ZhuShu" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Multiple" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Number" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Identifiers" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Sends" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="HandleDateTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="HandleResult" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="HandleDescription" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="EndTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsOpened" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="WinMoney" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="WinMoneyNoWithTax" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="WinDescription" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="QuashStatus" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="LotteryId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="StrikeDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PrintResult" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PrintDescription" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PrintDateTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="PringHandleDateTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="PrintOutTypeID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TouZhuSPValues" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IssueName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotalStatus" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="OpenedStatus" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsBackMoney" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsJiaJiang" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TicketNo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PlayTypeID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Tdesc" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="WinnerStatus" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PrizeStatus" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Remark" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Recvs" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Splited" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="SplitedParentID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ParentIdentifier" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="OpenTime" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="SchemeNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FromSource" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PushStatus" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="DelectDataMethod">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="str" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelectDataMethodResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DelectDataMethodResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectIDDataMethod">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="str" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelectIDDataMethodResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SelectIDDataMethodResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetDataMethod">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="str" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetDataMethodResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetDataMethodResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="upDate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="str" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="upDateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="upDateResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetDataMethodSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDataMethod" />
+  </wsdl:message>
+  <wsdl:message name="GetDataMethodSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDataMethodResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelectDataMethodSoapIn">
+    <wsdl:part name="parameters" element="tns:DelectDataMethod" />
+  </wsdl:message>
+  <wsdl:message name="DelectDataMethodSoapOut">
+    <wsdl:part name="parameters" element="tns:DelectDataMethodResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelectIDDataMethodSoapIn">
+    <wsdl:part name="parameters" element="tns:SelectIDDataMethod" />
+  </wsdl:message>
+  <wsdl:message name="SelectIDDataMethodSoapOut">
+    <wsdl:part name="parameters" element="tns:SelectIDDataMethodResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetDataMethodSoapIn">
+    <wsdl:part name="parameters" element="tns:SetDataMethod" />
+  </wsdl:message>
+  <wsdl:message name="SetDataMethodSoapOut">
+    <wsdl:part name="parameters" element="tns:SetDataMethodResponse" />
+  </wsdl:message>
+  <wsdl:message name="upDateSoapIn">
+    <wsdl:part name="parameters" element="tns:upDate" />
+  </wsdl:message>
+  <wsdl:message name="upDateSoapOut">
+    <wsdl:part name="parameters" element="tns:upDateResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Service1Soap">
+    <wsdl:operation name="GetDataMethod">
+      <wsdl:input message="tns:GetDataMethodSoapIn" />
+      <wsdl:output message="tns:GetDataMethodSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelectDataMethod">
+      <wsdl:input message="tns:DelectDataMethodSoapIn" />
+      <wsdl:output message="tns:DelectDataMethodSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectIDDataMethod">
+      <wsdl:input message="tns:SelectIDDataMethodSoapIn" />
+      <wsdl:output message="tns:SelectIDDataMethodSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetDataMethod">
+      <wsdl:input message="tns:SetDataMethodSoapIn" />
+      <wsdl:output message="tns:SetDataMethodSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="upDate">
+      <wsdl:input message="tns:upDateSoapIn" />
+      <wsdl:output message="tns:upDateSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Service1Soap" type="tns:Service1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetDataMethod">
+      <soap:operation soapAction="http://tempuri.org/GetDataMethod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelectDataMethod">
+      <soap:operation soapAction="http://tempuri.org/DelectDataMethod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectIDDataMethod">
+      <soap:operation soapAction="http://tempuri.org/SelectIDDataMethod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDataMethod">
+      <soap:operation soapAction="http://tempuri.org/SetDataMethod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="upDate">
+      <soap:operation soapAction="http://tempuri.org/upDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Service1Soap12" type="tns:Service1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetDataMethod">
+      <soap12:operation soapAction="http://tempuri.org/GetDataMethod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelectDataMethod">
+      <soap12:operation soapAction="http://tempuri.org/DelectDataMethod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectIDDataMethod">
+      <soap12:operation soapAction="http://tempuri.org/SelectIDDataMethod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDataMethod">
+      <soap12:operation soapAction="http://tempuri.org/SetDataMethod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="upDate">
+      <soap12:operation soapAction="http://tempuri.org/upDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="Service1Soap" binding="tns:Service1Soap">
+      <soap:address location="http://120.25.153.127:51003/Service1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Service1Soap12" binding="tns:Service1Soap12">
+      <soap12:address location="http://120.25.153.127:51003/Service1.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="LotteryPrinter.exe" version="1.0.0.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Image\Ico\mzh_GM2.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="LotteryPrinter" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="LotteryPrinter.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 清单选项
+          如果要更改 Windows 用户帐户控制级别，请用以下节点之一替换
+          requestedExecutionLevel 节点。
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+          如果要利用文件和注册表虚拟化提供
+          向后兼容性，请删除 requestedExecutionLevel 节点。
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Lottery.BLL.dll" size="80384">
+      <assemblyIdentity name="Lottery.BLL" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>EKCtSI8Y257r43PGkcs9UNoL32VGXqmH1wbq84Kjq/o=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Lottery.DAL.dll" size="22528">
+      <assemblyIdentity name="Lottery.DAL" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>itWvrESH2nBi0oXkSQC9y41thp/gT2WBRLOc2GsPCRw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Lottery.Model.dll" size="13312">
+      <assemblyIdentity name="Lottery.Model" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>YeCgAjt6mY0R8XP+CrpqVmO1NEgHw+ATj5hYJ6E63mc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Lottery_IBLL.dll" size="4608">
+      <assemblyIdentity name="Lottery_IBLL" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>AlrNlYgPKRYqGmyVQmWtdNEk624+/dgN/8izJ+4E4RI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LotteryPrinter.exe" size="2518016">
+      <assemblyIdentity name="LotteryPrinter" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>/mI0qqBD/3VP03D2WMFi+5Uyo2GRYshDKx1lFObNxBI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="App_Data\DBLotteryPrinter.accdb" size="1540096">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>56EqXyslP3UQtAC/vWVMA//EhpdQejzpZcJHL5sYeFU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\Ico\0132.ico" size="3006">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GOEU5pxVBkKJJ8i11jeqJK3bE5pnzsE1CN+VQYQSirY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\Ico\0133.ico" size="2238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gNKwYTHIsUhc56qZBlXRJf5GK5CXMr9SkAarVfie1+c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\Ico\0135.ico" size="3054">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>72w3rvXCcOeWH4UsD63JC4OmGpAdqnSW9Vwk2wEiQeM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\Ico\01412.ico" size="2238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NRKu76ceft3xjjQhmgYL+HdcJ/sBuDhEZsvFwluDlRI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\Ico\01414.ico" size="2238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Zh1ZLX26dcYIQlf6JJcNRQQVTBnRmgFSavayyLFxQNM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\Ico\01415.ico" size="2238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1OfIgWjrqlTaHlGz8z+5CELQgxMhHB6fCObjGd4PZqE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\Ico\ask_GM2.ico" size="2238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>sVl/zucb5ioIYoKXJqVOQGLdtYzSZP/1F/5KYJOuv9Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\Ico\DOLPHIN.ICO" size="2238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>AUYNiSZd5NE+FrpackbF+M/vwyhQv72oqqgg4g93QgU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\Ico\emk_GM1.ico" size="2238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2PSzHHaMUCAK5bbebam44U067+G3SPY4ZysEr5c60kk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\Ico\emk_GM2.ico" size="2238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>kMUG5WYi/ytGhf4tJ1DzLj7XR9yfrXGLpJxQ7US0fSQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\Ico\hrk_GM1.ico" size="2238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+//UbKz5zPDqPtPyGyUoRMGv9AaiOXDDjNRj0lP9w60=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\Ico\hzm_GM2.ico" size="2238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>KpwVTkQUNaXTJulxuuxJKceTVyj5h/NnmVxyS/trfMA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\Ico\itm_GM1.ico" size="2238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>F7gHyafEYHjF3t/I6C609ykazAnVkbUwYU2Q6qq+vb8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\Ico\itm_GM2.ico" size="2238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xc53n94mqhT+tTuvrArVJVyY3jepuSZGZlLMBfh3GV8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\Ico\KOR_GM1.ICO" size="2238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9EuhzpDFigxnZH4SPbyrXyC2abaKu939cTml1IpMMhs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\Ico\KOR_GM2.ICO" size="2238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FntR9mvHZyk1HVR5HM8GohKCSvUEPFRiVQO1cMTj8SI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\Ico\mnm_GM2.ico" size="2238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8yBnodzgTBMFSsy+vOaxqQjgDwHoKTlXur0LyC7PKW4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\Ico\mzh_GM1.ico" size="2238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9YD02hqMuWj+vQcBVAqQl/ZsAPxJLULcvw/rtrUQIEw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\Ico\mzh_GM2.ico" size="2238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RwYNUNgHeEQ0B4z6QYcZpdax7CWU9n3tZ+xiq/iNTEk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\Ico\NETCON.ICO" size="2238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4diAjqbzQqIfwxvkFWBzPye6K9jtupQt+XPpYQy0kEw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\Ico\rie_GM2.ico" size="2238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>HYyZEcibkDGNrJPowo/hIqrLQPYK8/tT7BT1j3B1oc0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\Ico\rum_GM1.ico" size="2238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Tlo0JwPfdY3llsaRZIDNDv9AiPJDrsO9E0zTZETLkM0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\Ico\rum_GM2.ico" size="2238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+3glPjPWFGL0szfaKQPiegEXlk+UhT+j9USjkrTUVbk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\Ico\Sonic My Computer.ico" size="6006">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>CVlfkzKisDarB3QsYOOx8Z8O9MUHc2niF/7EcTuUqQY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\Ico\sor_GM1.ico" size="2238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dr9na7bzafZu194fhCr1Fk9lW6+/+tQ69IOvLpUb5iM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\Ico\stk_GM1.ico" size="2238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>bUuv8DsX1GsMBHt6e88VXf4qDWvWa67FW49TrFqPiOs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\Ico\thy_GM1.ico" size="2238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>yoiqHItXXd/9LjXEPdxjCiwZaug17Icnwg92GqCyjNw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Image\Ico\乐.ico" size="766">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/ChMpN02Sl1qClnBgrt7xPm/IqZJL+Sqv/UVghqHCi0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="LotteryPrinter.exe.config" size="1229">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7j7LruGuyHQ2X/LDfayYPNs/W+oQus1TCIBIbHYbfDE=</dsig:DigestValue>
+    </hash>
+  </file>
+</asmv1:assembly>

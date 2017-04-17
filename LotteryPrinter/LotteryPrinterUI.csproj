@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4A4333C0-E759-43A1-A465-5BE050687D10}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LotteryPrinter</RootNamespace>
+    <AssemblyName>LotteryPrinter</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>E:\ABC\Lottery\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>9EC57C5E155AC10611CD534582BA6E576E5D4F3E</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>LotteryPrinterUI_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>paper mario.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CountAward.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CountAward.Designer.cs">
+      <DependentUpon>CountAward.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logon.Designer.cs">
+      <DependentUpon>Logon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainUI.Designer.cs">
+      <DependentUpon>MainUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\ServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setting.Designer.cs">
+      <DependentUpon>Setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QueryTitck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueryTitck.Designer.cs">
+      <DependentUpon>QueryTitck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserMouseControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserMouseControl.Designer.cs">
+      <DependentUpon>UserMouseControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XieYi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XieYi.Designer.cs">
+      <DependentUpon>XieYi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CountAward.resx">
+      <DependentUpon>CountAward.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logon.resx">
+      <DependentUpon>Logon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainUI.resx">
+      <DependentUpon>MainUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Setting.resx">
+      <DependentUpon>Setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryTitck.resx">
+      <DependentUpon>QueryTitck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserMouseControl.resx">
+      <DependentUpon>UserMouseControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XieYi.resx">
+      <DependentUpon>XieYi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Image\ani\0001.ani" />
+    <None Include="Image\ani\0011.ani" />
+    <None Include="Image\ani\0012.ani" />
+    <None Include="Image\ani\0013.ani" />
+    <None Include="Image\ani\0014.ani" />
+    <None Include="Image\ani\0026.ani" />
+    <None Include="Image\ani\0041.ani" />
+    <None Include="Image\ani\0042.ani" />
+    <None Include="Image\ani\0043.ani" />
+    <None Include="Image\ani\0044.ani" />
+    <None Include="Image\ani\0051.ani" />
+    <None Include="Image\ani\0052.ani" />
+    <None Include="Image\ani\0053.ani" />
+    <None Include="Image\ani\0061.ani" />
+    <None Include="Image\ani\0062.ani" />
+    <None Include="Image\ani\0063.ani" />
+    <None Include="Image\ani\0064.ani" />
+    <None Include="Image\ani\0065.ani" />
+    <None Include="Image\ani\0081.ani" />
+    <None Include="Image\ani\0082.ani" />
+    <None Include="Image\ani\0083.ani" />
+    <None Include="Image\ani\0084.ani" />
+    <None Include="Image\ani\0085.ani" />
+    <None Include="Image\ani\0086.ani" />
+    <None Include="Image\ani\0091.ani" />
+    <None Include="Image\ani\0092.ani" />
+    <None Include="Image\ani\0093.ani" />
+    <None Include="Image\ani\0094.ani" />
+    <None Include="Image\ani\0095.ani" />
+    <None Include="Image\ani\0096.ani" />
+    <None Include="Image\ani\0101.ani" />
+    <None Include="Image\ani\0102.ani" />
+    <None Include="Image\ani\0103.ani" />
+    <None Include="Image\ani\0104.ani" />
+    <None Include="Image\ani\0105.ani" />
+    <None Include="Image\ani\0106.ani" />
+    <None Include="Image\ani\0111.ani" />
+    <None Include="Image\ani\0112.ani" />
+    <None Include="Image\ani\0113.ani" />
+    <None Include="Image\ani\01131.ani" />
+    <None Include="Image\ani\01134.ani" />
+    <None Include="Image\ani\0114.ani" />
+    <None Include="Image\ani\0115.ani" />
+    <None Include="Image\ani\0131.ani" />
+    <None Include="Image\ani\0132.ani" />
+    <None Include="Image\ani\0133.ani" />
+    <None Include="Image\ani\0134.ani" />
+    <None Include="Image\ani\0135.ani" />
+    <None Include="Image\ani\0136.ani" />
+    <None Include="Image\ani\01411.ani" />
+    <None Include="Image\ani\01413.ani" />
+    <None Include="Image\ani\1.ani" />
+    <None Include="Image\ani\2.ani" />
+    <None Include="Image\ani\3.ani" />
+    <None Include="Image\ani\4.ani" />
+    <None Include="Image\ani\a4.ani" />
+    <None Include="Image\ani\a6.ani" />
+    <None Include="Image\ani\a7.ani" />
+    <None Include="Image\ani\arr6.ani" />
+    <None Include="Image\ani\arr8.ani" />
+    <None Include="Image\ani\arr9.ani" />
+    <None Include="Image\ani\b3.ani" />
+    <None Include="Image\ani\b5.ani" />
+    <None Include="Image\ani\b6.ani" />
+    <None Include="Image\ani\b7.ani" />
+    <None Include="Image\ani\b9.ani" />
+    <None Include="Image\ani\beam.ani" />
+    <None Include="Image\ani\Black Parahna Plant.ani" />
+    <None Include="Image\ani\Busy_Vnd.ani" />
+    <None Include="Image\ani\c1.ani" />
+    <None Include="Image\ani\c2.ani" />
+    <None Include="Image\ani\c6.ani" />
+    <None Include="Image\ani\c7.ani" />
+    <None Include="Image\ani\c9.ani" />
+    <None Include="Image\ani\cross.ani" />
+    <None Include="Image\ani\cur04.ani" />
+    <None Include="Image\ani\cur05.ani" />
+    <None Include="Image\ani\cur06.ani" />
+    <None Include="Image\ani\cur07.ani" />
+    <None Include="Image\ani\d1.ani" />
+    <None Include="Image\ani\d2.ani" />
+    <None Include="Image\ani\d5.ani" />
+    <None Include="Image\ani\DAIGAE.ANI" />
+    <None Include="Image\ani\DINOSAUR.ANI" />
+    <None Include="Image\ani\DOG.ANI" />
+    <None Include="Image\ani\dolphin front.ani" />
+    <None Include="Image\ani\Dry Bones %28Fall Apart%29.ani" />
+    <None Include="Image\ani\Dry Bones %28Walking%29.ani" />
+    <None Include="Image\ani\e2.ani" />
+    <None Include="Image\ani\e4.ani" />
+    <None Include="Image\ani\e5.ani" />
+    <None Include="Image\ani\e8.ani" />
+    <None Include="Image\ani\e9.ani" />
+    <None Include="Image\ani\F-Hourglas.ani" />
+    <None Include="Image\ani\f2.ani" />
+    <None Include="Image\ani\f3.ani" />
+    <None Include="Image\ani\f4.ani" />
+    <None Include="Image\ani\f5.ani" />
+    <None Include="Image\ani\f7.ani" />
+    <None Include="Image\ani\f8.ani" />
+    <None Include="Image\ani\f9.ani" />
+    <None Include="Image\ani\Flogger05.ani" />
+    <None Include="Image\ani\Flogger06.ani" />
+    <None Include="Image\ani\Flogger07.ani" />
+    <None Include="Image\ani\Flogger08.ani" />
+    <None Include="Image\ani\Flogger09.ani" />
+    <None Include="Image\ani\fly Goomba.ani" />
+    <None Include="Image\ani\Flying Goomba.ani" />
+    <None Include="Image\ani\football.ani" />
+    <None Include="Image\ani\FrogMar.ani" />
+    <None Include="Image\ani\g1.ani" />
+    <None Include="Image\ani\g2.ani" />
+    <None Include="Image\ani\g3.ani" />
+    <None Include="Image\ani\g4.ani" />
+    <None Include="Image\ani\g6.ani" />
+    <None Include="Image\ani\g7.ani" />
+    <None Include="Image\ani\g9.ani" />
+    <None Include="Image\ani\garu5.ani" />
+    <None Include="Image\ani\ghost 1.ani" />
+    <None Include="Image\ani\ghost 2.ani" />
+    <None Include="Image\ani\ghost 3.ani" />
+    <None Include="Image\ani\Giant Parahna.ani" />
+    <None Include="Image\ani\Goomba Walk.ani" />
+    <None Include="Image\ani\h1.ani" />
+    <None Include="Image\ani\h3.ani" />
+    <None Include="Image\ani\h4.ani" />
+    <None Include="Image\ani\h5.ani" />
+    <None Include="Image\ani\h6.ani" />
+    <None Include="Image\ani\h7.ani" />
+    <None Include="Image\ani\h8.ani" />
+    <None Include="Image\ani\h9.ani" />
+    <None Include="Image\ani\Help_Vnd.ani" />
+    <None Include="Image\ani\i1.ani" />
+    <None Include="Image\ani\i2.ani" />
+    <None Include="Image\ani\i4.ani" />
+    <None Include="Image\ani\IDO.ANI" />
+    <None Include="Image\ani\Iggy smb3.ani" />
+    <None Include="Image\ani\Koopa Troopa %28Blue%29.ani" />
+    <None Include="Image\ani\Koopa Troopa %28Red%29.ani" />
+    <None Include="Image\ani\Koopa Troopa %28Yellow%29.ani" />
+    <None Include="Image\ani\Kuribo Goomba.ani" />
+    <None Include="Image\ani\Link_Vnd.ani" />
+    <None Include="Image\ani\Ludwig Von.ani" />
+    <None Include="Image\ani\Luigi %28Jumping%29.ani" />
+    <None Include="Image\ani\Luigi Walk.ani" />
+    <None Include="Image\ani\Luigi Walkn.ani" />
+    <None Include="Image\ani\mando.ani" />
+    <None Include="Image\ani\Mar3jump.ani" />
+    <None Include="Image\ani\Mar3tail.ani" />
+    <None Include="Image\ani\MarJump.ani" />
+    <None Include="Image\ani\MarSpin.ani" />
+    <None Include="Image\ani\MarSpin2.ani" />
+    <None Include="Image\ani\MarWalk.ani" />
+    <None Include="Image\ani\MarWalk3.ani" />
+    <None Include="Image\ani\Mole.ani" />
+    <None Include="Image\ani\Morton3.ani" />
+    <None Include="Image\ani\NANA_L.ANI" />
+    <None Include="Image\ani\NANA_R.ANI" />
+    <None Include="Image\ani\nezumi-懸偪忬懺.ani" />
+    <None Include="Image\ani\no.ani" />
+    <None Include="Image\ani\Norm_Vnd.ani" />
+    <None Include="Image\ani\parana.ani" />
+    <None Include="Image\ani\pingu.ani" />
+    <None Include="Image\ani\pingu1.ani" />
+    <None Include="Image\ani\Roy3.ani" />
+    <None Include="Image\ani\SAGYOU.ANI" />
+    <None Include="Image\ani\Size NESW.ani" />
+    <None Include="Image\ani\Size NS.ani" />
+    <None Include="Image\ani\Size WE.ani" />
+    <None Include="Image\ani\Sonic Busy.ani" />
+    <None Include="Image\ani\TEXT.ANI" />
+    <None Include="Image\ani\up.ani" />
+    <None Include="Image\ani\wait1.ani" />
+    <None Include="Image\ani\wait10.ani" />
+    <None Include="Image\ani\wait2.ani" />
+    <None Include="Image\ani\wait5.ani" />
+    <None Include="Image\ani\wait6.ani" />
+    <None Include="Image\ani\wait7.ani" />
+    <None Include="Image\ani\wait8.ani" />
+    <None Include="Image\ani\wait9.ani" />
+    <None Include="Image\ani\Wendy.ani" />
+    <None Include="Image\ani\winmrj685.ani" />
+    <None Include="Image\ani\winmrj686.ani" />
+    <None Include="Image\ani\winmrj687.ani" />
+    <None Include="Image\ani\winmrj688.ani" />
+    <None Include="Image\ani\winmrj689.ani" />
+    <None Include="Image\ani\Work_Vnd.ani" />
+    <None Include="Image\ani\YOKO.ANI" />
+    <None Include="Image\ani\冰.ani" />
+    <None Include="Image\ani\冰翎设计.ani" />
+    <None Include="Image\ani\等待-功夫.ani" />
+    <None Include="Image\ani\等待-宝剑2.ani" />
+    <None Include="Image\ani\等待-灯泡.ani" />
+    <None Include="Image\ani\等待-雪人.ani" />
+    <None Include="Image\ani\等待-霸王龙.ani" />
+    <None Include="Image\ani\箭头-国旗.ani" />
+    <None Include="Image\ani\箭头-左轮.ani" />
+    <None Include="Image\ani\箭头-毛笔.ani" />
+    <None Include="Image\ani\箭头-红缨枪.ani" />
+    <None Include="Image\ani\箭头-菜刀.ani" />
+    <None Include="Image\ani\箭头-铅笔.ani" />
+    <None Include="Image\ani\箭头-鹅毛笔.ani" />
+    <None Include="Image\ani\计.ani" />
+    <None Include="Image\ani\设.ani" />
+    <None Include="LotteryPrinterUI_TemporaryKey.pfx" />
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\ServiceReference1\LotteryPrinter.ServiceReference1.DelectDataMethodResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\LotteryPrinter.ServiceReference1.GetDataMethodResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\LotteryPrinter.ServiceReference1.LotterData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\LotteryPrinter.ServiceReference1.SelectIDDataMethodResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\LotteryPrinter.ServiceReference1.SetDataMethodResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\LotteryPrinter.ServiceReference1.upDateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\Service1.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LotteryBLL\LotteryBLL.csproj">
+      <Project>{3bdf8663-7567-4c7f-93e0-6fba5a576dd6}</Project>
+      <Name>LotteryBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LotteryModel\LotteryModel.csproj">
+      <Project>{a5cf990a-2ef3-499f-b6e6-1caf2f55ec68}</Project>
+      <Name>LotteryModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lottery_IBLL\Lottery_IBLL.csproj">
+      <Project>{d67b873e-887d-4ee8-92b3-cc0578f750a5}</Project>
+      <Name>Lottery_IBLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Image\BackImage\" />
+    <Folder Include="Image\OtherImage\" />
+    <Folder Include="Image\Png\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ad.ico" />
+    <Content Include="App_Data\DBLotteryPrinter.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Image\Ico\0132.ico" />
+    <Content Include="Image\Ico\0133.ico" />
+    <Content Include="Image\Ico\0135.ico" />
+    <Content Include="Image\Ico\01412.ico" />
+    <Content Include="Image\Ico\01414.ico" />
+    <Content Include="Image\Ico\01415.ico" />
+    <Content Include="Image\Ico\ask_GM2.ico" />
+    <Content Include="Image\Ico\DOLPHIN.ICO" />
+    <Content Include="Image\Ico\emk_GM1.ico" />
+    <Content Include="Image\Ico\emk_GM2.ico" />
+    <Content Include="Image\Ico\hrk_GM1.ico" />
+    <Content Include="Image\Ico\hzm_GM2.ico" />
+    <Content Include="Image\Ico\itm_GM1.ico" />
+    <Content Include="Image\Ico\itm_GM2.ico" />
+    <Content Include="Image\Ico\KOR_GM1.ICO" />
+    <Content Include="Image\Ico\KOR_GM2.ICO" />
+    <Content Include="Image\Ico\mnm_GM2.ico" />
+    <Content Include="Image\Ico\mzh_GM1.ico" />
+    <Content Include="Image\Ico\mzh_GM2.ico" />
+    <Content Include="Image\Ico\NETCON.ICO" />
+    <Content Include="Image\Ico\rie_GM2.ico" />
+    <Content Include="Image\Ico\rum_GM1.ico" />
+    <Content Include="Image\Ico\rum_GM2.ico" />
+    <Content Include="Image\Ico\Sonic My Computer.ico" />
+    <Content Include="Image\Ico\sor_GM1.ico" />
+    <Content Include="Image\Ico\stk_GM1.ico" />
+    <Content Include="Image\Ico\thy_GM1.ico" />
+    <Content Include="Image\Ico\乐.ico" />
+    <Content Include="paper mario.ico" />
+    <Content Include="Tub.ico" />
+    <None Include="Service References\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ServiceReference1\configuration.svcinfo" />
+    <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReference1\Service1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceReference1\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
